@@ -4,8 +4,9 @@
       <ArticleContent 
         :title="t.title"
         :body="t.body"
-        :coordinates="t.coordinates"
+        :location="t.location"
         :imgPath="t.imgPath"
+        :embedLink="t.mapEmbed"
       />
     </div>
   </div>
