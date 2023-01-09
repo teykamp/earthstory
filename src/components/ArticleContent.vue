@@ -5,7 +5,7 @@
       <v-img
       :src="require('../assets/articles/images/' + imgPath)"
       max-height="750"
-      max-width="750"
+      max-width="950"
       ></v-img>
     </v-card>
     <v-card-title 
@@ -17,17 +17,19 @@
     class="text-center">
       {{ subtitle }}
     </v-card-subtitle>
-    <v-card-text 
-    class="text-center"
-    >
-      {{ body }}
-    </v-card-text>
-
-    
+    <div class="d-flex justify-center">
+      <v-card max-width="50%" tile elevation="0" :color="bgColor">
+        <v-card-text 
+        class="text-center"
+        >
+          {{ body }}
+        </v-card-text>
+      </v-card>
+    </div>
     <v-card tile elevation="0" class="d-flex justify-center pb-6" :color="bgColor">
       <iframe
         :src="embedLink.toString()"
-        width="50%" height="500vw" style="border:0;" allowfullscreen="" loading="lazy"
+        width="70%" height="600vw" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </v-card>
 
