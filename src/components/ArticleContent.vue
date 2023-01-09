@@ -1,6 +1,6 @@
 <template>
   <div>
-   <v-card tile elevation="0" :color="bgColor" class="pa-6">
+   <v-card tile elevation="0" :color="bgColor" class="pa-6 pt-12">
     <v-card tile elevation="0" class="d-flex justify-center mb-6" :color="bgColor">
       <v-img
       :src="require('../assets/articles/images/' + imgPath)"
@@ -13,6 +13,10 @@
     >
       {{ title }}
     </v-card-title>
+    <v-card-subtitle
+    class="text-center">
+      {{ subtitle }}
+    </v-card-subtitle>
     <v-card-text 
     class="text-center"
     >
@@ -39,6 +43,7 @@ export default {
   name: 'ArticleContent',
   props: {
     title: String,
+    subtitle: String,
     body: String,
     location: Array, 
     imgPath: String,  // make list of images

@@ -1,14 +1,16 @@
 <template>
   <div>
-    <div v-for="t in text" :key="t.id">
+    <v-card v-for="t in text" :key="t.id">
       <ArticleContent 
         :title="t.title"
+        :subtitle="t.subtitle"
         :body="t.body"
         :location="t.location"
         :imgPath="t.imgPath"
         :embedLink="t.mapEmbed"
       />
-    </div>
+      <v-divider></v-divider>
+    </v-card>
   </div>
 </template>
 
