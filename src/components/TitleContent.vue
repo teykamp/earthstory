@@ -21,11 +21,7 @@
             </v-hover>
           </v-col>
           <v-col class="pr-16">
-            <v-img 
-            src="../assets/globeImage.webp"
-            height="50vh"
-            contain
-            ></v-img>
+            <MapBox/>
           </v-col>
         </v-row>
         <v-row class="justify-center mt-16" height="80vh" >
@@ -43,17 +39,16 @@
         </v-row>
       </v-container>
     </v-card>
-    <MapObject/>
   </div>
 </template>
 
 <script>
-import MapObject from './MapObject.vue'
+import MapBox from './MapBox.vue'
 export default {
   name: 'TitleContent',
-  components: [
-    MapObject,
-  ],
+  components: {
+    MapBox,
+  },
 
   props : {
     coordinates: Array,

@@ -2,7 +2,7 @@
   <v-footer class="pa-6" color="black" dark>
 		<v-row class="justify-center pa-6">
 			<v-btn v-for="social in socials" 
-				:key="social" 
+				:key="social[0]" 
 				class="mx-4" 
 				dark 
 				icon 
