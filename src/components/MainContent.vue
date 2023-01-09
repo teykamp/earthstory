@@ -56,14 +56,14 @@ export default {
   },
 
   mounted() {
-    this.importImg(require.context('../assets/articles/images', true, /\.png$/));
+    // this.importImg(require.context('../assets/articles/images', true, /\.png$/));
     this.importText(require.context('../assets/articles/text', true, /\.json$/));
   },
 
   methods: {
-    importImg(r) {
-      r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
-    },
+    // importImg(r) {
+    //   r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
+    // },
     importText(r) {
       r.keys().forEach(key => (this.text.push(r(key))));
     },

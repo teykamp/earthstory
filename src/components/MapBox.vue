@@ -7,13 +7,13 @@
     
   >
     <l-geo-json :geojson="geojson" style="cursor:default;"></l-geo-json>
-    <div v-for="latLong in markerLatLongList" :key="latLong">
+    <div v-for="latLong in markerLatLongList" :key="latLong[0]">
       <l-circle-marker
         :lat-lng="latLong"
         :color="markerColor"
-        fillOpacity="1"
+        :fillOpacity="1"
         :fillColor="markerColor"
-        radius="4"
+        :radius="radius"
       ></l-circle-marker>
     </div>
   </l-map>
@@ -22,6 +22,7 @@
 <script>
 import { LMap, LGeoJson, LCircleMarker } from 'vue2-leaflet';
 import mapData from '../assets/mapData.json'
+import latLongList from '../assets/articles/text/summaryCoordinates.json'
 
 
 export default {
@@ -36,8 +37,9 @@ export default {
       center: [47.313220, -1.319482],
       zoomControl: false,
       geojson: mapData,
-      markerLatLongList: [[47.313220, -1.319482]],
+      markerLatLongList: latLongList.coordinatesList,
       markerColor: 'red',
+      radius: 4,
     };
   },
 }
