@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card v-for="t in text" :key="t.id">
+    <v-card v-for="t in text" :key="t.id" tile elevation="0">
       <ArticleContent 
         :title="t.title"
         :subtitle="t.subtitle"
@@ -10,6 +10,31 @@
         :embedLink="t.mapEmbed"
       />
       <v-divider></v-divider>
+    </v-card>
+    <v-card 
+      class="d-flex justify-center" 
+      color="grey darken-3"
+      tile
+    >
+      <v-tooltip top>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn 
+            class="ma-16" 
+            fab 
+            dark 
+            small 
+            color="primary" 
+            @click="scrollToTop()"
+            v-bind="attrs"
+            v-on="on"
+          >
+            <v-icon dark>
+              mdi-chevron-double-up
+            </v-icon>
+          </v-btn>
+        </template>
+        <span>Return To Top</span>
+      </v-tooltip>
     </v-card>
   </div>
 </template>
@@ -41,6 +66,9 @@ export default {
     },
     importText(r) {
       r.keys().forEach(key => (this.text.push(r(key))));
+    },
+    scrollToTop() {
+      window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
     },
   }
 }

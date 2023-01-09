@@ -43,15 +43,21 @@
         </v-row>
       </v-container>
     </v-card>
+    <MapObject/>
   </div>
 </template>
 
 <script>
+import MapObject from './MapObject.vue'
 export default {
   name: 'TitleContent',
   components: [
-  
+    MapObject,
   ],
+
+  props : {
+    coordinates: Array,
+  },
 
   methods: {
     scrollDownFromTop() {
