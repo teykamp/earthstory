@@ -1,0 +1,10 @@
+{
+    "id": 0,
+    "title": "Title",
+    "subtitle": "Subtitle",
+    "body": "Description",
+    "location": [0.000,
+                0.000],
+    "mapEmbed": "maps.google.com/",
+    "imgPath": "image.png"
+}

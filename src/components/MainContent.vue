@@ -9,7 +9,7 @@
         :imgPath="t.imgPath"
         :embedLink="t.mapEmbed"
       />
-      <v-divider></v-divider>
+      <v-divider color="gray"></v-divider>
     </v-card>
     <v-card 
       class="d-flex justify-center" 

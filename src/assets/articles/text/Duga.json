@@ -1,0 +1,10 @@
+{
+    "id": 3,
+    "title": "Duga",
+    "subtitle": "Ukraine",
+    "body": "Operated from July 1976 to December 1989, the Duga radar station was deployed as an early warning system for american missile attacks. Located near Chernobyl, this location is well within the nuclear exclusion zone evacuated after the reactor exploded. The taller structure is 150m tall.",
+    "location": [51.305606641289856,
+                30.066423835250216],
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.844099795499!2d30.064510534655906!3d51.305095794316514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472a89591a850ff1%3A0x8feb7523e10cfac9!2z0KDQsNC00ZbQvtC70L7QutCw0YbRltC50L3QsCDRgdGC0LDQvdGG0ZbRjyAi0JTRg9Cz0LAi!5e1!3m2!1sen!2sus!4v1673323646008!5m2!1sen!2sus",
+    "imgPath": "DUGA_Radar_Array_near_Chernobyl,_Ukraine_2014.jpg"
+}
